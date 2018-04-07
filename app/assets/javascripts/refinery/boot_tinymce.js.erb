@@ -2,10 +2,22 @@ function init_tinymce_for(jq_selector) {
   tinymce.init({
     selector: jq_selector,
     menubar : false,
-    toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image | fullscreen | code",
+    toolbar:  "undo redo | styleselect | style-p style-h1 style-h2 style-h3 | bold italic | bullist numlist outdent indent | link image | fullscreen | code | codesample",
     content_css : '<%= asset_path "tinymce.scss", :only_path => false %>',
-    plugins: ["image", "link", "fullscreen", "code", "stylebuttons"],
+    plugins: ["image", "link", "fullscreen", "code", "stylebuttons", "codesample"],
     skin_url: '/assets/tinymce/skins/lightgray',
+    codesample_languages: [
+        {text: 'HTML/XML', value: 'markup'},
+        {text: 'JavaScript', value: 'javascript'},
+        {text: 'CSS', value: 'css'},
+        {text: 'PHP', value: 'php'},
+        {text: 'Ruby', value: 'ruby'},
+        {text: 'Python', value: 'python'},
+        {text: 'Java', value: 'java'},
+        {text: 'C', value: 'c'},
+        {text: 'C#', value: 'csharp'},
+        {text: 'C++', value: 'cpp'}
+    ],
 
     file_browser_callback   : function(field_name, url, type, win) {
 

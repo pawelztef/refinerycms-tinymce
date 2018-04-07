@@ -5,7 +5,7 @@
 /*
    Namespace: TINYMCE
    Global Tinymce namespace.
-*/
+   */
 /*
  *= require tinymce/tinymce
  *= require tinymce/tinymce.jquery
@@ -16,4 +16,4 @@
  *= require tinymce/plugins/code/plugin
  *= require refinery/boot_tinymce
  *= require_self
-*/
+ */
