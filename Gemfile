@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+
 gemspec
 
 git "http://github.com/refinery/refinerycms", branch: "master" do
