@@ -14,6 +14,7 @@
  *= require tinymce/plugins/fullscreen/plugin
  *= require tinymce/plugins/stylebuttons/plugin
  *= require tinymce/plugins/code/plugin
+ *= require tinymce/plugins/codesample/plugin
  *= require refinery/boot_tinymce
  *= require_self
  */
